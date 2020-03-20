@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Votre petit guide de France</string>
+
+    <string name="string_btn_guide">Guide</string>
+    <string name="string_btn_helper">Aide du\nconférencier</string>
+
+    <string-array name="places">
+        <item>Disneyland</item>
+        <item>Musée du Louvre</item>
+        <item>Le tour Eiffel</item>
+        <item>Parc Astérix </item>
+        <item>Arc de Triomphe </item>
+        <item>Sainte-Chapelle </item>
+        <item>Abbaye du Mont-Saint-Michel </item>
+
+    </string-array>
+
+</resources>
