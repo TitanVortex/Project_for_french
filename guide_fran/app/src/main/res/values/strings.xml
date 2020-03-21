@@ -13,6 +13,18 @@
         <item>Sainte-Chapelle </item>
         <item>Abbaye du Mont-Saint-Michel </item>
 
+
+    </string-array>
+
+    <string-array name="links">
+        <item>https://en.wikipedia.org/wiki/Disneyland</item>
+        <item>https://en.wikipedia.org/wiki/Louvre</item>
+        <item>https://en.wikipedia.org/wiki/Eiffel_Tower</item>
+        <item>https://en.wikipedia.org/wiki/Parc_Ast%C3%A9rix</item>
+        <item>https://en.wikipedia.org/wiki/Arc_de_Triomphe</item>
+        <item>https://en.wikipedia.org/wiki/Sainte-Chapelle</item>
+        <item>https://en.wikipedia.org/wiki/Mont-Saint-Michel_Abbey</item>
+
     </string-array>
 
 </resources>

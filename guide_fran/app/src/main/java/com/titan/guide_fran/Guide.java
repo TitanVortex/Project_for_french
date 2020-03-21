@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toolbar;
+
+import java.lang.reflect.Array;
+import java.util.List;
 
 public class Guide extends AppCompatActivity {
 
@@ -34,6 +38,9 @@ public class Guide extends AppCompatActivity {
                         getResources().getStringArray(R.array.places)
                 );
 
+        final String links[]=getResources().getStringArray(R.array.links);
+
+
         listView.setAdapter(listAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -43,6 +50,7 @@ public class Guide extends AppCompatActivity {
 
                 Bundle extras = new Bundle();
                 extras.putString("PLACE_NAME", listView.getItemAtPosition(i).toString());
+                extras.putString("PLACE_LINK",links[i]);
 
                 intent.putExtras(extras);
 
