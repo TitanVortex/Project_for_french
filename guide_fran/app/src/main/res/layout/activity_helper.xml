@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Helper">
+    tools:context=".Guide"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+    <Toolbar
+        android:id="@+id/toolbar_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar_guide"
+
+        android:orientation="vertical"
+
+        android:weightSum="10"
+
+        >
+    <ListView
+        android:id="@+id/listView_helper"
+        android:layout_weight="7"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/listView"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:id="@+id/btn_reverso"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Explorer" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:autoSizeTextType="uniform"
+                android:text="@string/tv_reverso" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:id="@+id/btn_francais_facile"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Explorer" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:autoSizeTextType="uniform"
+                android:text="@string/tv_francais_facile" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
