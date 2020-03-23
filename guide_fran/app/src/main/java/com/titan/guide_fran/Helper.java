@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -119,6 +120,9 @@ public class Helper extends AppCompatActivity {
         Context context;
         String[] fr;
         String[] en;
+
+        int IDs[]={R.raw.audio1,R.raw.audio2,R.raw.audio3,R.raw.audio4,R.raw.audio5,R.raw.audio6,R.raw.audio7};
+
         //Button btn_aud;
 
         MyAdapter1 (Context c, String[] s_fr, String[] s_en ) {
@@ -139,20 +143,18 @@ public class Helper extends AppCompatActivity {
             TextView tvfr = item_view.findViewById(R.id.tv_helper_fr_id);
             TextView tven = item_view.findViewById(tv_helper_en_id);
 
-            //int i=position;
-            /*
+
             Button btn_aud=item_view.findViewById(R.id.button_play);
+
             btn_aud.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
-                    String i=listContent[position];
-                    int resID=getResources().getIdentifier(i, "raw", getPackageName());
+                public void onClick(View view){
 
-                    MediaPlayer audio_player = MediaPlayer.create(this, raw_ref );
+                    MediaPlayer audio_player = MediaPlayer.create(Helper.this, IDs[position]);
                     audio_player.start();
                 }
             });
-            */
+
 
             tvfr.setText(fr[position]);
             tven.setText(en[position]);
